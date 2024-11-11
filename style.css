@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+/* Login button */
+.login-btn {
+    padding: 8px 16px;
+    border: 1px solid #6a11cb;
+    border-radius: 20px;
+    color: #ffffff;
+    background: #6a11cb;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ffffff;
+    color: #6a11cb;
+}
+
+/* Mobile Menu Button */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+ @media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  */
+
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.exoticdiamondsa.com/cdn/shop/articles/Orange_Modern_Minimal_Blog_Writing_YouTube_Thumbnail_10_688785d3-1b06-4232-be3f-10fc3552954f.png?v=1709542898');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 40px;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #6a11cb;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero buttron:hover { 
+    background-color: #2575fc;
+}
+
+/* Featured Watches Section */
+.section-title {
+     text-align: center;
+    margin: 40px 0 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.watches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.watch-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.watch-card:hover {
+    transform: translateY(-10px);
+}
+
+.watch-card img {
+    width: 100%;
+    height: auto;
+}
+
+.watch-card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.watch-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+.watch-card button {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.watch-card button:hover {
+    background-color: #6a11cb;
+}
+
+/* Testimonials Section */
+/* .testimonials {
+    background-color: #f0f0f5;
+    padding: 40px 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+    margin: 15px 0;
+}
+
+.testimonial-card h4 {
+    color: #2575fc;
+    margin-top: 10px;
+} */
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    
+    .section-title {
+        font-size: 1.6em;
+    }
+}
+
+
+
+/* General Styling */
+  
+  h2, h5, h6 {
+    color: #333;
+  }
+  
+  /* Contact Form */
+  #contactForm .form-control {
+    border-radius: 0.5rem;
+  }
+  #contactForm .btn-primary {
+    background-color: #333;
+    border-color: #333;
+    transition: background-color 0.3s;
+  }
+  #contactForm .btn-primary:hover {
+    background-color: #555;
+  }
+  
+  /* Contact Information */
+  .contact-info {
+    background-color: #f8f9fa;
+  }
+  .contact-info ul {
+    padding-left: 0;
+  }
+  .contact-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Google Maps */
+  iframe {
+    border-radius: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-info, #contactForm {
+      text-align: center;
+    }
+  }
+  /* Footer Styling */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    color: #ffd700; /* Gold color for VIP look */
+  }
+  
+  .footer-social a i {
+    font-size: 1.5em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+  
